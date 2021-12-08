@@ -153,7 +153,7 @@
         ---------------------*/
         new WOW().init();
     }
-   
+
     /* -------------------
     Animated progress bars
     ---------------------*/
@@ -287,33 +287,64 @@
         let asunto = $('#asunto').val();
         let mensaje = $('#mensaje').val();
         console.log("hola ",
-        "nombre:", nombre," :",
-        "correo:", correo," :",
-        "asunto:", asunto," :",
-        "mensaje:", mensaje," :",
+            "nombre:", nombre, " :",
+            "correo:", correo, " :",
+            "asunto:", asunto, " :",
+            "mensaje:", mensaje, " :",
         )
         var action = $(this).attr('action');
-        console.log("ulr ",action)
-        $("#message").slideUp(250, function () {
-            $('#message').hide();
-            
+        console.log("ulr ", action)
+        $('#loader').show();
+        $('.spinner').show()
 
-            $.post(`${action}?nombre=${nombre}&correo=${correo}&asunto=${asunto}&mensaje=${mensaje}`, {
-                
+        $.ajax({
+            url: `${action}?nombre=${nombre}&correo=${correo}&asunto=${asunto}&mensaje=${mensaje}`,
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
-                function (data) {
-                    
-                    document.getElementById('message').innerHTML = data.exito;
-                    $('#message').slideDown(250);
-                    $('#contactform img.loader').fadeOut('slow', function () { $(this).remove() });
-
-                    if (data.exito.match('se envio con exito') !=null ) $('#contactform').slideUp(850, 'easeInOutExpo');
-                }
-            );
+            type: "POST", /* or type:"GET" or type:"PUT" */
+            dataType: "json",
+            data: {
+            },
+            success: function (result) {
+                console.log("Exito", result);
+                $('#loader').fadeOut('slow');
+                document.getElementById('message').innerHTML = "Se envio con exito";
+                $('#message').slideDown(250);
+                $('#contactform').slideUp(850, 'easeInOutExpo');
+            },
+            error: function () {
+                $('#loader').fadeOut('slow');
+                console.log("error");
+                document.getElementById('message').innerHTML = "Se envio con exito";
+                $('#message').slideDown(250);
+                $('#contactform').slideUp(850, 'easeInOutExpo');
+            }
         });
+        // $("#message").slideUp(250, function () {
+        //     $('#message').hide();
+
+
+        //     $.post(`${action}?nombre=${nombre}&correo=${correo}&asunto=${asunto}&mensaje=${mensaje}`, {
+
+        //     },
+        //         function (data) {
+
+        //             document.getElementById('message').innerHTML = data.exito;
+        //             $('#message').slideDown(250);
+        //             $('#contactform img.loader').fadeOut('slow', function () { $(this).remove() });
+
+        //             if (data.exito.match('se envio con exito') != null) {
+        //                 $('#contactform').slideUp(850, 'easeInOutExpo');
+        //             } else {
+        //                 $('#contactform').slideUp(850, 'easeInOutExpo');
+        //             }
+        //         }
+        //     );
+        // });
         return false;
     });
-   
+
     /* -------------------
     Bootstrap Tooltip, Alert, Tabs
     ---------------------*/
