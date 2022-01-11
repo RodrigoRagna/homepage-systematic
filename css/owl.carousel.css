@@ -110,10 +110,10 @@
    -moz-border-radius: 30px;
    border-radius: 30px
 }
-.owl-item.loading {
+/* .owl-item.loading {
    min-height: 150px;
    background: url(AjaxLoader.gif) center center no-repeat
-}
+} */
 .owl-origin {
    -webkit-perspective: 1200px;
    -webkit-perspective-origin-x: 50%;

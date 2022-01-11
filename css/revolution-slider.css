@@ -933,7 +933,7 @@ img.tp-slider-alternative-image {
    width: 100%;
    height: auto
 }
-.tp-simpleresponsive .button {
+/* .tp-simpleresponsive .button {
    padding: 6px 13px 5px;
    border-radius: 3px;
    -moz-border-radius: 3px;
@@ -957,7 +957,7 @@ img.tp-slider-alternative-image {
    font-size: 19px;
    line-height: 57px!important;
    background: url(../images/gradient/g40.png) repeat-x top
-}
+} */
 .tp-simpleresponsive .button.big:hover, .tp-simpleresponsive .button:hover, .tp-simpleresponsive .purchase:hover {
    background-position: bottom, 15px 11px
 }
@@ -1061,7 +1061,7 @@ img.tp-slider-alternative-image {
    -webkit-user-select: none;
    -o-user-select: none
 }
-.tp-bannershadow.tp-shadow1 {
+/* .tp-bannershadow.tp-shadow1 {
    background: url(../assets/shadow1.png) 0 0/100% 100% no-repeat;
    width: 890px;
    height: 60px;
@@ -1078,7 +1078,7 @@ img.tp-slider-alternative-image {
    width: 890px;
    height: 60px;
    bottom: -60px
-}
+} */
 .caption.fullscreenvideo {
    left: 0;
    top: 0;
@@ -1235,7 +1235,7 @@ img.tp-slider-alternative-image {
    left: 0;
    z-index: 4
 }
-.tp-dottedoverlay.twoxtwo {
+/* .tp-dottedoverlay.twoxtwo {
    background: url(../img/assets/gridtile.png)
 }
 .tp-dottedoverlay.twoxtwowhite {
@@ -1246,7 +1246,7 @@ img.tp-slider-alternative-image {
 }
 .tp-dottedoverlay.threexthreewhite {
    background: url(../assets/gridtile_3x3_white.png)
-}
+} */
 .tpclear {
    clear: both
 }
@@ -1269,7 +1269,7 @@ img.tp-slider-alternative-image {
    -khtml-opacity: 0;
    opacity: 0
 }
-.tp-bullets.simplebullets.navbar {
+/* .tp-bullets.simplebullets.navbar {
    border: 1px solid #666;
    border-bottom: 1px solid #444;
    background: url(../assets/boxed_bgtile.png);
@@ -1366,7 +1366,7 @@ img.tp-slider-alternative-image {
    margin-right: 5px!important;
    float: left;
    margin-top: 10px
-}
+} */
 .tp-bullets.simplebullets.navbar-old .bullet.first {
    margin-left: 0!important
 }
@@ -1400,7 +1400,7 @@ img.tp-slider-alternative-image {
    -khtml-opacity: 0;
    opacity: 0
 }
-.tp-leftarrow {
+/* .tp-leftarrow {
    z-index: 100;
    cursor: pointer;
    position: relative;
@@ -1503,14 +1503,14 @@ img.tp-slider-alternative-image {
    float: left;
    margin-left: 6px;
    margin-top: 10px
-}
+} */
 .tp-leftarrow.navbar-old.thumbswitharrow {
    margin-right: 10px
 }
 .tp-rightarrow.navbar-old.thumbswitharrow {
    margin-left: 0
 }
-.tp-leftarrow.square {
+/* .tp-leftarrow.square {
    z-index: 100;
    cursor: pointer;
    position: relative;
@@ -1569,7 +1569,7 @@ img.tp-slider-alternative-image {
    background: url(../assets/large_right.png);
    width: 40px;
    height: 40px
-}
+} */
 .tp-leftarrow:hover, .tp-rightarrow:hover {
    background-position: bottom left
 }
@@ -1662,14 +1662,14 @@ img.tp-slider-alternative-image {
    position: absolute;
    visibility: hidden
 }
-.caption.slidelink a div, .tp-caption.slidelink a div {
+/* .caption.slidelink a div, .tp-caption.slidelink a div {
    width: 3000px;
    height: 1500px;
    background: url(../assets/coloredbg.png)
 }
 .tp-caption.slidelink a span {
    background: url(../assets/coloredbg.png)
-}
+} */
 .tparrows .tp-arr-imgholder, .tparrows .tp-arr-titleholder {
    display: none
 }
@@ -2437,7 +2437,7 @@ img.tp-slider-alternative-image {
    z-index: 10000;
    position: absolute
 }
-.tp-loader.spinner0 {
+/* .tp-loader.spinner0 {
    width: 40px;
    height: 40px;
    background: url(../img/assets/rev-loader.gif) center center no-repeat #fff;
@@ -2450,7 +2450,7 @@ img.tp-slider-alternative-image {
    border-radius: 3px;
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px
-}
+} */
 .tp-loader.spinner1 {
    width: 40px;
    height: 40px;
@@ -2465,7 +2465,7 @@ img.tp-slider-alternative-image {
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px
 }
-.tp-loader.spinner5 {
+/* .tp-loader.spinner5 {
    background: url(../assets/loader.gif) 10px 10px no-repeat #fff;
    margin: -22px;
    width: 44px;
@@ -2473,7 +2473,7 @@ img.tp-slider-alternative-image {
    border-radius: 3px;
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px
-}
+} */
 @-webkit-keyframes tp-rotateplane {
 0% {
 -webkit-transform:perspective(120px)
