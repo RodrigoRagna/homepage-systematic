@@ -2869,12 +2869,12 @@ footer a:hover {
     color: #fff;
     z-index: 100;
     line-height: 26px;
-    bottom: -50px;
-    right: 20px;
+    bottom: 5px;
+    right: 350px;
     display: none;
     cursor: pointer;
     border-radius: 2px;
-    height: 30px;
+    
     width: 30px;
     display: block;
     text-align: center;
@@ -2883,10 +2883,7 @@ footer a:hover {
     -webkit-transition: background-color 0.1s linear;
     -o-transition: background-color 0.1s linear;
 }
-#back-to-top:hover {
-    color: #fff;
-    background-color: #121212;
-}
+
 #back-to-top .icon {
     font-size: 10px;
 }
